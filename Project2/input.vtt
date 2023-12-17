@@ -1,0 +1,4018 @@
+WEBVTT
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/22-0
+00:00:07.694 --> 00:00:08.114
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/72-0
+00:00:08.174 --> 00:00:12.313
+So, umm, so today we're gonna go
+over linear algebra and geometry
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/72-1
+00:00:12.313 --> 00:00:16.264
+and geometric interpretations to
+kind of get a little bit more
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/72-2
+00:00:16.264 --> 00:00:19.901
+familiar with some of the
+operations that we're gonna use
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/72-3
+00:00:19.901 --> 00:00:23.224
+and also start putting you in
+the mind frame of how.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/84-0
+00:00:25.904 --> 00:00:29.194
+How we view data and how we
+organize that data?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/100-0
+00:00:31.334 --> 00:00:35.644
+But before we do that, I wanted
+to point out a couple things.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/122-0
+00:00:35.654 --> 00:00:40.420
+So last meeting I did tell you
+that I goofed with the the due
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/122-1
+00:00:40.420 --> 00:00:42.034
+date for project two.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/131-0
+00:00:42.244 --> 00:00:45.074
+I'm still maintaining Project 2
+for October 16th.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/135-0
+00:00:45.084 --> 00:00:47.384
+However, I have.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/142-0
+00:00:47.394 --> 00:00:49.274
+I did realize that there were
+errors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/154-0
+00:00:50.024 --> 00:00:54.354
+That error was propagated down
+through Project 3A and 3B.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/172-0
+00:00:54.804 --> 00:00:58.833
+So because we haven't started on
+those, I have shifted those due
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/172-1
+00:00:58.833 --> 00:00:59.204
+dates.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/228-0
+00:00:59.524 --> 00:01:04.009
+Again, if there's an issue with
+this, contact me outside of this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/228-1
+00:01:04.009 --> 00:01:08.287
+I I can work with you, but like
+I was saying before, to stick
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/228-2
+00:01:08.287 --> 00:01:12.634
+with the deadlines and to stay
+on topic for the projects going
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/228-3
+00:01:12.634 --> 00:01:16.980
+along with the lectures, I think
+it's important for us to have
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/228-4
+00:01:16.980 --> 00:01:18.084
+these due dates.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/254-0
+00:01:18.314 --> 00:01:23.041
+So Project 3A right now is gonna
+be due October 16th, which you
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/254-1
+00:01:23.041 --> 00:01:26.364
+see is the same date as Project
+2 being due.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/270-0
+00:01:27.094 --> 00:01:30.781
+I'm going to keep it that way
+again, unless you come in, plead
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/270-1
+00:01:30.781 --> 00:01:31.834
+your case with me.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/289-0
+00:01:33.594 --> 00:01:36.295
+So I would highly encourage you
+to finish our project too and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/289-1
+00:01:36.295 --> 00:01:37.384
+get started on Project 3.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/318-0
+00:01:37.394 --> 00:01:41.701
+So I think at the end of lecture
+what I'll do is I'll give you an
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/318-1
+00:01:41.701 --> 00:01:45.224
+overview of Project 3 and what
+you're gonna be doing.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/320-0
+00:01:45.434 --> 00:01:45.804
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/324-0
+00:01:46.374 --> 00:01:47.124
+And introduce them.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/328-0
+00:01:48.474 --> 00:01:49.124
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/335-0
+00:01:49.234 --> 00:01:51.754
+So today we're gonna do a linear
+algebra.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/347-0
+00:01:51.764 --> 00:01:54.174
+So I have the slides pulled up
+here.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/356-0
+00:01:55.214 --> 00:01:56.544
+I don't know what I changed
+here.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/367-0
+00:01:56.554 --> 00:01:59.594
+That's a little worrisome, but
+we shall get going.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/369-0
+00:02:00.534 --> 00:02:00.734
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/381-0
+00:02:01.944 --> 00:02:07.614
+So again, this lecture is umm
+for those of you who.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/401-0
+00:02:09.514 --> 00:02:12.750
+Maybe you haven't seen linear
+algebra concepts in a while, or
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/401-1
+00:02:12.750 --> 00:02:13.324
+maybe ever.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/412-0
+00:02:14.154 --> 00:02:17.244
+Umm, I'm not quite sure it was a
+prereq of this.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/424-0
+00:02:17.254 --> 00:02:20.078
+Any experience with linear
+algebra or did anyone take a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/424-1
+00:02:20.078 --> 00:02:20.834
+linear algebra?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/430-0
+00:02:21.974 --> 00:02:23.354
+Umm, no.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/438-0
+00:02:24.524 --> 00:02:25.104
+Many years ago.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/436-0
+00:02:24.604 --> 00:02:24.904
+All right.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/441-0
+00:02:25.894 --> 00:02:27.034
+Many, many years ago.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/447-0
+00:02:27.434 --> 00:02:28.804
+OK, well, stick with me.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/452-0
+00:02:27.834 --> 00:02:27.994
+Yeah.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/458-0
+00:02:29.014 --> 00:02:30.904
+I'll try to make this as
+painless as possible.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/463-0
+00:02:31.274 --> 00:02:32.014
+Linear algebra.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/467-0
+00:02:32.114 --> 00:02:33.424
+Algebra is prequel, OK?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/472-0
+00:02:33.574 --> 00:02:33.884
+Oops.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/476-0
+00:02:34.134 --> 00:02:35.224
+And I'm already skipping ahead.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/496-0
+00:02:35.504 --> 00:02:39.531
+OK, so linear algebra we have
+this concept of vectors, so
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/496-1
+00:02:39.531 --> 00:02:41.544
+here's a vector that we have.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/519-0
+00:02:41.554 --> 00:02:46.448
+This vector starts at the origin
+and goes to this point here
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/519-1
+00:02:46.448 --> 00:02:48.934
+which is described AS2 comma 3.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/526-0
+00:02:49.814 --> 00:02:53.024
+All right, so why is this
+important?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/560-0
+00:02:53.034 --> 00:02:56.536
+So I think I introduced last
+time that we oftentimes think
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/560-1
+00:02:56.536 --> 00:03:00.275
+about or data I copying feature
+space and we can think of them
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/560-2
+00:03:00.275 --> 00:03:02.114
+as points within feature space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/591-0
+00:03:02.514 --> 00:03:05.914
+It is also sometimes useful to
+not just think of them as
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/591-1
+00:03:05.914 --> 00:03:08.955
+points, but to take this
+interpretation of them as
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/591-2
+00:03:08.955 --> 00:03:10.684
+vectors within feature space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/618-0
+00:03:10.984 --> 00:03:14.333
+And I think by the end of this
+lecture, hopefully I'll give you
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/618-1
+00:03:14.333 --> 00:03:17.524
+some reasons as to why we might
+wanna treat them as vectors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/632-0
+00:03:18.074 --> 00:03:23.501
+But uh, but we certainly have
+this interpretation for our data
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/632-1
+00:03:23.501 --> 00:03:24.104
+points.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/639-0
+00:03:24.354 --> 00:03:25.824
+So here's this vector 2.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/648-0
+00:03:25.834 --> 00:03:27.464
+Comma three, we have the first
+dimension.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/657-0
+00:03:28.164 --> 00:03:31.634
+Uh, first and then the second
+dimension, right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/663-0
+00:03:31.644 --> 00:03:32.974
+So first dimension second.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/669-0
+00:03:33.044 --> 00:03:35.934
+OK, typically you'll see.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/671-0
+00:03:36.454 --> 00:03:36.994
+Uh.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/676-0
+00:03:37.634 --> 00:03:38.644
+Vectors themselves.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/699-0
+00:03:40.744 --> 00:03:44.459
+Written with angle brackets,
+variable names are usually in
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/699-1
+00:03:44.459 --> 00:03:46.914
+lower case with an arrow over
+the top.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/724-0
+00:03:47.164 --> 00:03:52.716
+So if we're talking about a
+vector, it's a single dimension,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/724-1
+00:03:52.716 --> 00:03:57.994
+meaning that it is in array like
+a one by N array, right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/729-0
+00:03:58.584 --> 00:03:59.534
+So these are vectors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/743-0
+00:03:59.594 --> 00:04:03.454
+OK, so we can create vectors
+from two points.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/753-0
+00:04:03.684 --> 00:04:06.154
+So here we have two points
+within our space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/783-0
+00:04:06.304 --> 00:04:11.290
+Now, I said before that we can
+think of the interpretation of a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/783-1
+00:04:11.290 --> 00:04:15.964
+vector or of a point here as a
+vector with the origin here.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/791-0
+00:04:15.974 --> 00:04:17.404
+To that point in space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/811-0
+00:04:17.634 --> 00:04:20.553
+But sometimes we'll wanna think
+about vectors in space so we can
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/811-1
+00:04:20.553 --> 00:04:21.944
+do this from 2 points in space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/866-0
+00:04:22.194 --> 00:04:25.850
+So here's our .1, which is 2
+comma 5 and then we have .2
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/866-1
+00:04:25.850 --> 00:04:29.890
+which is 3 comma one and if we
+subtract these points from each
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/866-2
+00:04:29.890 --> 00:04:33.802
+other it describes the vector
+that goes in between them that
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/866-3
+00:04:33.802 --> 00:04:36.174
+starts at 2/5 and goes to three
+one.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/871-0
+00:04:37.464 --> 00:04:39.474
+OK, alright.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/888-0
+00:04:39.624 --> 00:04:44.680
+So not only can we describe
+points, we can describe them as
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/888-1
+00:04:44.680 --> 00:04:45.354
+vectors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/910-0
+00:04:45.484 --> 00:04:49.069
+We can also describe a vector
+that goes between two points,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/910-1
+00:04:49.069 --> 00:04:52.534
+OK, and we do that through the
+the subtraction operation.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/912-0
+00:04:53.784 --> 00:04:54.374
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/919-0
+00:04:54.434 --> 00:04:57.774
+And then this vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/937-0
+00:04:57.784 --> 00:05:04.251
+Here we can describe as also one
+common -, 4 which we can also
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/937-1
+00:05:04.251 --> 00:05:05.174
+describe.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/962-0
+00:05:05.184 --> 00:05:09.245
+Here we can conceptualize this
+as a vector that starts at the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/962-1
+00:05:09.245 --> 00:05:11.734
+origin, then goes to one common
+-, 4.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/983-0
+00:05:11.864 --> 00:05:14.967
+But you can see that the
+direction and magnitude of this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/983-1
+00:05:14.967 --> 00:05:17.144
+vector is the same as this one
+up here.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/991-0
+00:05:17.504 --> 00:05:20.694
+OK, so that's an important
+point.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1007-0
+00:05:20.704 --> 00:05:24.986
+Is that these vectors give us
+direction as well as overall
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1007-1
+00:05:24.986 --> 00:05:26.074
+length of them.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1011-0
+00:05:26.244 --> 00:05:26.634
+Alright.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1036-0
+00:05:26.644 --> 00:05:30.686
+And those are important features
+that we're going to make use of
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1036-1
+00:05:30.686 --> 00:05:33.795
+when we start applying
+mathematical models to our
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1036-2
+00:05:33.795 --> 00:05:35.474
+points or our observations.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1051-0
+00:05:35.964 --> 00:05:40.614
+OK, so we can represent vectors
+using a library called Numpy.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1056-0
+00:05:40.624 --> 00:05:42.194
+I think I've mentioned Numpy
+before.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1101-0
+00:05:42.324 --> 00:05:46.601
+I don't think we've directly
+used Numpy, though we've been
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1101-1
+00:05:46.601 --> 00:05:51.095
+relying really on pandas, so
+pandas itself is built on Numpy,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1101-2
+00:05:51.095 --> 00:05:55.445
+so you can actually go into
+pandas and you can return Numpy
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1101-3
+00:05:55.445 --> 00:05:56.894
+arrays or ND arrays.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1138-0
+00:05:56.904 --> 00:06:01.535
+They call them from a series or
+from a data frame by using the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1138-1
+00:06:01.535 --> 00:06:05.945
+DOT values property or calling
+the dot values properties so
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1138-2
+00:06:05.945 --> 00:06:10.354
+that returns an ND array which
+is the Numpy data structure.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1154-0
+00:06:10.574 --> 00:06:14.494
+OK, so vectors are represented
+as ND arrays and Numpy.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1171-0
+00:06:15.144 --> 00:06:19.443
+So you can create them from
+Python lists, so you can use
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1171-1
+00:06:19.443 --> 00:06:19.744
+MPs.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1183-0
+00:06:19.754 --> 00:06:23.104
+So MPs the what do we wanna call
+this?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1207-0
+00:06:23.114 --> 00:06:26.989
+The reference that we use for
+Numpy itself, so you can do MP
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1207-1
+00:06:26.989 --> 00:06:29.784
+dot array and you can generate
+an ND array.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1228-0
+00:06:29.794 --> 00:06:32.979
+From this you can also they have
+some of these functions in here
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1228-1
+00:06:32.979 --> 00:06:34.644
+for commonly created arrays
+like.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1270-0
+00:06:34.654 --> 00:06:39.284
+If you wanted an array of zeros,
+you could use MPP dot zeros and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1270-1
+00:06:39.284 --> 00:06:43.842
+it will create a vector of all
+zeros and then here you can also
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1270-2
+00:06:43.842 --> 00:06:46.904
+create a vector of all ones
+using NP ones.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1275-0
+00:06:47.034 --> 00:06:47.444
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1277-0
+00:06:47.514 --> 00:06:49.364
+So good number.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1301-0
+00:06:49.814 --> 00:06:54.709
+OK, so we have this idea of
+scalar multiplication then, so
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1301-1
+00:06:54.709 --> 00:06:57.944
+vectors can be multiplied by a
+scalar.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1343-0
+00:06:58.234 --> 00:07:02.800
+So if you have this vector here,
+which consists of the values 5,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1343-1
+00:07:02.800 --> 00:07:07.084
+three and one single dimension,
+if we come in and with Numpy
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1343-2
+00:07:07.084 --> 00:07:11.580
+define this vector and then use
+our multiplication operator and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1343-3
+00:07:11.580 --> 00:07:12.984
+just a scalar value.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1361-0
+00:07:12.994 --> 00:07:16.360
+So a single value, what it's
+going to do is it's going to do
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1361-1
+00:07:16.360 --> 00:07:17.904
+element wise multiplication.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1385-0
+00:07:17.914 --> 00:07:22.215
+So it'll do 5 * 5 three times 5
+and 1 * 5, and this is the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1385-1
+00:07:22.215 --> 00:07:23.454
+resulting vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1404-0
+00:07:23.464 --> 00:07:27.066
+So if you do scalar
+multiplication with vectors in
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1404-1
+00:07:27.066 --> 00:07:29.114
+Numpy, you get back a vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1411-0
+00:07:29.124 --> 00:07:31.684
+That's the same length and
+shape, OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1415-0
+00:07:33.864 --> 00:07:34.264
+No biggie.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1437-0
+00:07:35.974 --> 00:07:40.022
+Alright, we can also do vector
+addition, so we can do an
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1437-1
+00:07:40.022 --> 00:07:43.004
+addition of 1 vector with
+another vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1455-0
+00:07:43.174 --> 00:07:45.788
+So in this case we have these
+two vectors that are each of
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1455-1
+00:07:45.788 --> 00:07:46.364
+length three.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1478-0
+00:07:46.434 --> 00:07:51.409
+So the 1st 1123, the second one
+is 531 and if we do addition
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1478-1
+00:07:51.409 --> 00:07:52.224
+with this.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1501-0
+00:07:52.234 --> 00:07:56.274
+So if we use the addition
+operator within Python, what it
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1501-1
+00:07:56.274 --> 00:08:00.244
+is going to do is it's going to
+do elementwise addition.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1537-0
+00:08:00.254 --> 00:08:03.511
+So what you can appreciate from
+this is that if you wanna add 2
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1537-1
+00:08:03.511 --> 00:08:06.564
+vectors together, they have to
+be of the same shape or they
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1537-2
+00:08:06.564 --> 00:08:08.294
+have to have the same
+dimensions.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1556-0
+00:08:08.764 --> 00:08:12.874
+OK, so it doesn't make sense to
+add a four element vector to a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1556-1
+00:08:12.874 --> 00:08:14.244
+three element vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1560-0
+00:08:14.934 --> 00:08:15.884
+OK, cool.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1567-0
+00:08:16.294 --> 00:08:17.624
+So that's what that operator
+will be.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1579-0
+00:08:19.814 --> 00:08:22.954
+All right, now we have a dot
+product.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1617-0
+00:08:23.724 --> 00:08:26.695
+So we are going to use dot
+products a lot and in fact if
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1617-1
+00:08:26.695 --> 00:08:29.718
+you look carefully, A dot
+product looks an awful lot like
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1617-2
+00:08:29.718 --> 00:08:32.584
+a model that we've already
+talked about in this class.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1621-0
+00:08:33.724 --> 00:08:34.134
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1634-0
+00:08:34.664 --> 00:08:38.234
+So that product is a fundamental
+operation within linear algebra.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1644-0
+00:08:38.614 --> 00:08:41.224
+So you can perform dot products
+between two vectors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1688-0
+00:08:42.494 --> 00:08:46.224
+So what a dot product between
+two vectors is going to do again
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1688-1
+00:08:46.224 --> 00:08:50.072
+in this case, if you're doing a
+dot product between two vectors,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1688-2
+00:08:50.072 --> 00:08:52.854
+you want the vectors to be of
+the same length.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1739-0
+00:08:52.864 --> 00:08:55.889
+They have to have the same
+number of elements, So what this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1739-1
+00:08:55.889 --> 00:08:58.813
+does is it multiplies the first
+two elements together in,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1739-2
+00:08:58.813 --> 00:09:01.283
+multiplies the second two
+elements together, and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1739-3
+00:09:01.283 --> 00:09:04.207
+multiplies the third two
+elements together, in this case,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1739-4
+00:09:04.207 --> 00:09:06.374
+and then it takes the sum of all
+of those.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1786-0
+00:09:07.604 --> 00:09:11.579
+OK, so you can appreciate unlike
+scalar multiplication, and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1786-1
+00:09:11.579 --> 00:09:15.752
+unlike vector addition, what the
+dot product is going to do is
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1786-2
+00:09:15.752 --> 00:09:19.660
+it's going to take your end
+length vector or two in length
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1786-3
+00:09:19.660 --> 00:09:23.634
+vectors, and it's going to
+return a single value from them.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1789-0
+00:09:26.074 --> 00:09:26.724
+Yeah, arsalon.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1811-0
+00:09:29.184 --> 00:09:32.093
+So I imagine you're gonna
+explain this little more about
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1811-1
+00:09:32.093 --> 00:09:33.674
+when you're going through this.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1841-0
+00:09:33.774 --> 00:09:37.438
+I I know that this is a
+fundamental concept of finding
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1841-1
+00:09:37.438 --> 00:09:41.635
+weights when you're training out
+like a model, can you kind of
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1841-2
+00:09:41.635 --> 00:09:43.034
+explain a little bit?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1870-0
+00:09:43.044 --> 00:09:45.948
+Just give us some hint about
+what these what these actually
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1870-1
+00:09:45.948 --> 00:09:48.804
+represent in terms of our like
+training a machine learning
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1870-2
+00:09:48.804 --> 00:09:49.094
+model.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1886-0
+00:09:49.924 --> 00:09:51.594
+There's like, is there a way to
+or something?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1887-0
+00:09:49.994 --> 00:09:51.264
+So we're not quite there yet.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1911-0
+00:09:52.374 --> 00:09:55.446
+I'd rather I'd rather get
+through these fundamentals first
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1911-1
+00:09:55.446 --> 00:09:58.674
+and then we can start seeing how
+we can apply them to models.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1919-0
+00:09:59.524 --> 00:09:59.994
+Umm.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1955-0
+00:10:00.244 --> 00:10:04.815
+But I think if you're keen eyed
+here, this equation here looks
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1955-1
+00:10:04.815 --> 00:10:09.095
+an awful lot like multiple
+linear regression where we have
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1955-2
+00:10:09.095 --> 00:10:13.303
+a coefficient here and then we
+have a value of one of our
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1955-3
+00:10:13.303 --> 00:10:14.754
+observations, right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1977-0
+00:10:15.184 --> 00:10:18.454
+So this is like coefficient for
+future one and this is feature
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1977-1
+00:10:18.454 --> 00:10:20.114
+one coefficient for feature two.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/1985-0
+00:10:20.184 --> 00:10:21.894
+This is feature two and so on
+and so forth.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2002-0
+00:10:22.294 --> 00:10:25.569
+So you can actually use that
+products or what we'll see is
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2002-1
+00:10:25.569 --> 00:10:27.344
+matrix multiplication, which is.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2027-0
+00:10:30.504 --> 00:10:35.173
+A very similar to dot products
+and we can use these two apply
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2027-1
+00:10:35.173 --> 00:10:36.754
+parameters, 2 models.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2038-0
+00:10:37.244 --> 00:10:41.008
+We're not going to use this to
+directly solve for the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2038-1
+00:10:41.008 --> 00:10:41.774
+parameters.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2043-0
+00:10:42.854 --> 00:10:45.304
+OK, alright.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2066-0
+00:10:45.524 --> 00:10:49.630
+So to do this in Numpy, you
+don't wanna use the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2066-1
+00:10:49.630 --> 00:10:55.104
+multiplication symbol, you wanna
+use the method NP dot dot. OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2071-0
+00:10:56.204 --> 00:10:56.654
+Umm.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2073-0
+00:10:57.324 --> 00:10:57.614
+Groovy.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2077-0
+00:10:58.354 --> 00:10:59.004
+So there we are.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2082-0
+00:10:59.574 --> 00:11:00.844
+What about magnitude though?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2100-0
+00:11:00.854 --> 00:11:03.927
+So I said that vectors
+themselves not only have
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2100-1
+00:11:03.927 --> 00:11:06.744
+direction, but they have
+magnitude as well.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2120-0
+00:11:06.954 --> 00:11:11.501
+Sometimes it's helpful for us to
+be able to talk about or think
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2120-1
+00:11:11.501 --> 00:11:13.774
+about the magnitude of a vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2154-0
+00:11:14.784 --> 00:11:18.608
+So the way that we can calculate
+the magnitude of the vector is
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2154-1
+00:11:18.608 --> 00:11:22.551
+we can take the dot product of a
+vector with itself and then take
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2154-2
+00:11:22.551 --> 00:11:23.984
+the square root of this.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2163-0
+00:11:24.944 --> 00:11:26.054
+So what is this doing?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2176-0
+00:11:26.064 --> 00:11:30.094
+This is multiplying the values
+of each one of its dimensions.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2192-0
+00:11:30.464 --> 00:11:33.524
+It adds them all up and then it
+takes the square root of it.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2197-0
+00:11:35.104 --> 00:11:37.424
+OK, sounds good.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2210-0
+00:11:38.574 --> 00:11:41.584
+So to do this, you can layer
+these together.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2222-0
+00:11:41.594 --> 00:11:44.104
+So here's our vector of 1111.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2269-0
+00:11:44.734 --> 00:11:48.567
+So this is a four dimensional or
+it we could think of it as an
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2269-1
+00:11:48.567 --> 00:11:52.035
+observation described by 4
+features and here you can see
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2269-2
+00:11:52.035 --> 00:11:55.929
+that we can dot it with itself
+and then take the square root of
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2269-3
+00:11:55.929 --> 00:11:57.024
+it and we get two.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2279-0
+00:11:57.034 --> 00:12:00.814
+So the magnitude of this vector
+is actually two OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2285-0
+00:12:02.944 --> 00:12:03.334
+All right.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2311-0
+00:12:03.804 --> 00:12:08.228
+So not only are magnitudes
+important, but a very, very
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2311-1
+00:12:08.228 --> 00:12:13.133
+common metric that a lot of
+machine learning models make use
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2311-2
+00:12:13.133 --> 00:12:13.374
+of.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2322-0
+00:12:13.604 --> 00:12:17.054
+Is this idea of distance so
+Euclidean distance?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2335-0
+00:12:17.064 --> 00:12:20.526
+You may have heard of this
+before, but why is this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2335-1
+00:12:20.526 --> 00:12:21.204
+important?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2357-0
+00:12:21.214 --> 00:12:25.060
+So oftentimes what we're curious
+about within our feature space
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2357-1
+00:12:25.060 --> 00:12:27.884
+is how does one point relate to
+another point?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2373-0
+00:12:28.014 --> 00:12:31.363
+And one way that we can describe
+that relationship is what is the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2373-1
+00:12:31.363 --> 00:12:32.884
+distance between these points?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2427-0
+00:12:33.174 --> 00:12:36.704
+So you can imagine that
+observations that are described
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2427-1
+00:12:36.704 --> 00:12:40.233
+by very similar values of
+features are going to be very
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2427-2
+00:12:40.233 --> 00:12:44.267
+close to each other in Euclidean
+distance, and two observations
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2427-3
+00:12:44.267 --> 00:12:47.796
+that are described by very
+different feature values are
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2427-4
+00:12:47.796 --> 00:12:50.254
+going to be far away from one
+another.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2439-0
+00:12:50.784 --> 00:12:53.954
+So that's why we get why we use
+Euclidean distance.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2452-0
+00:12:54.164 --> 00:12:59.864
+So we can calculate the distance
+by uh using this expression.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2489-0
+00:13:00.054 --> 00:13:03.970
+So this expression what you're
+doing here is you're really
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2489-1
+00:13:03.970 --> 00:13:08.150
+taking the dot product between
+your vector U minus your vector
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2489-2
+00:13:08.150 --> 00:13:12.065
+V and itself again, and then
+take the square root of that.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2489-3
+00:13:12.065 --> 00:13:12.264
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2495-0
+00:13:14.354 --> 00:13:14.694
+With me.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2521-0
+00:13:15.874 --> 00:13:20.369
+OK, So what this comes out to is
+you take the first feature, the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2521-1
+00:13:20.369 --> 00:13:23.964
+first element of you minus the
+first element in TV.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2550-0
+00:13:24.574 --> 00:13:27.124
+You take that difference, you
+square it and then you take all
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2550-1
+00:13:27.124 --> 00:13:29.632
+of these differences, square
+them, add them all together and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2550-2
+00:13:29.632 --> 00:13:30.454
+get the square root.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2559-0
+00:13:30.504 --> 00:13:33.724
+That'll give you Euclidian
+distance, OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2581-0
+00:13:33.884 --> 00:13:36.928
+And in fact, if we take a look
+back here at magnitude, this is
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2581-1
+00:13:36.928 --> 00:13:39.054
+the exact same thing that
+magnitudes doing.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2603-0
+00:13:39.464 --> 00:13:43.626
+It's just we can imagine a -, 0
+here, right, because we're
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2603-1
+00:13:43.626 --> 00:13:47.294
+taking the magnitude to this
+point from the origin.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2613-0
+00:13:48.454 --> 00:13:51.994
+OK, so that gives us the
+magnitude Ruby, but.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2624-0
+00:13:53.914 --> 00:13:55.454
+All right, so Euclidian
+distance.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2663-0
+00:13:55.464 --> 00:13:59.688
+So magnitude and direction
+vectors have magnitudes, lengths
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2663-1
+00:13:59.688 --> 00:14:03.771
+as well as direction, so the
+magnitude as we talked about
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2663-2
+00:14:03.771 --> 00:14:07.784
+here we can solve for the
+Euclidean distance between the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2663-3
+00:14:07.784 --> 00:14:09.684
+origin and this point here.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2682-0
+00:14:10.144 --> 00:14:15.647
+And to get direction what we can
+do is we can take the vector and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2682-1
+00:14:15.647 --> 00:14:18.564
+then divide by this magnitude.
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2688-0
+00:14:20.744 --> 00:14:20.894
+All.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2728-0
+00:14:22.214 --> 00:14:26.462
+So in addition to these basic
+functions, let's take a look at
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2728-1
+00:14:26.462 --> 00:14:30.505
+that product a little bit more
+in depth and trying to like
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2728-2
+00:14:30.505 --> 00:14:34.616
+build an intuitive understanding
+of what is the dot product
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2728-3
+00:14:34.616 --> 00:14:36.534
+actually doing in our space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2737-0
+00:14:38.024 --> 00:14:39.914
+So there are a couple of
+properties here.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2747-0
+00:14:40.104 --> 00:14:46.034
+So one property is that products
+compare vectors, right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2789-0
+00:14:46.644 --> 00:14:50.011
+So what we can get out of this
+is if we have two vectors and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2789-1
+00:14:50.011 --> 00:14:53.432
+these vectors are orthogonal to
+one another, so they're at in
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2789-2
+00:14:53.432 --> 00:14:56.523
+two dimensional space, they're
+at right angles from one
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2789-3
+00:14:56.523 --> 00:14:56.964
+another.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2804-0
+00:14:58.014 --> 00:15:01.150
+If we evaluate the dot product
+on that, we'll actually get a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2804-1
+00:15:01.150 --> 00:15:02.024
+dot product of 0.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2835-0
+00:15:03.334 --> 00:15:06.212
+So just by evaluating the DOT
+product on any two vectors, if
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2835-1
+00:15:06.212 --> 00:15:08.948
+it comes out at zero, then we
+know that these vectors are
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2835-2
+00:15:08.948 --> 00:15:10.174
+orthogonal to one another.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2838-0
+00:15:11.754 --> 00:15:11.954
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2842-0
+00:15:13.054 --> 00:15:13.524
+Uh.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2895-0
+00:15:13.574 --> 00:15:17.858
+In a similar idea, if we have
+two vectors here, but these
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2895-1
+00:15:17.858 --> 00:15:21.995
+vectors are going in the same
+direction, if we take the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2895-2
+00:15:21.995 --> 00:15:26.870
+normalized dot product or or the
+dot product of the unit vectors,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2895-3
+00:15:26.870 --> 00:15:30.784
+what we'll get is the dot
+product between these two.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2912-0
+00:15:30.794 --> 00:15:33.810
+If they're going in the same
+direction and they're parallel,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2912-1
+00:15:33.810 --> 00:15:35.144
+the dot product equals one.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2953-0
+00:15:37.324 --> 00:15:42.153
+And if there are anti parallel
+to one another, this normalized
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2953-1
+00:15:42.153 --> 00:15:47.059
+bad product is -, 1 so one way
+that I like to view dot products
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2953-2
+00:15:47.059 --> 00:15:50.124
+and you'll see them all over the
+place.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2975-0
+00:15:50.134 --> 00:15:53.003
+11 way that I like to view that
+products is they're kind of like
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/2975-1
+00:15:53.003 --> 00:15:54.724
+a compass for us within feature
+space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3008-0
+00:15:55.174 --> 00:15:58.789
+So if we have a reference vector
+that we know a lot about and we
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3008-1
+00:15:58.789 --> 00:16:02.292
+wanna compare another vector to
+it, it gives us the ability to
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3008-2
+00:16:02.292 --> 00:16:03.404
+compare that vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3025-0
+00:16:03.514 --> 00:16:06.670
+So in two dimensional space we
+can just plot them and look at
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3025-1
+00:16:06.670 --> 00:16:06.924
+them.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3036-0
+00:16:06.994 --> 00:16:09.504
+What happens when we get to like
+50 dimensional space?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3043-0
+00:16:09.894 --> 00:16:11.764
+The DOT product still applies,
+right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3078-0
+00:16:11.804 --> 00:16:15.018
+We can expand this out to many
+different dimensions, but it
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3078-1
+00:16:15.018 --> 00:16:18.340
+acts as a compass to tell us
+like, how does this other vector
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3078-2
+00:16:18.340 --> 00:16:20.964
+compare to the one that we're
+interested in? OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3085-0
+00:16:22.554 --> 00:16:23.644
+Can you go back to?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3091-0
+00:16:22.614 --> 00:16:22.934
+Alright.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3112-0
+00:16:23.784 --> 00:16:27.691
+Sorry, can you go back to real
+quick or are they all unit
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3112-1
+00:16:27.691 --> 00:16:30.924
+inspector or this one this does
+not need to be?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3117-0
+00:16:30.684 --> 00:16:33.154
+Umm so.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3157-0
+00:16:33.234 --> 00:16:36.508
+So I do unit vector, so if you
+do the unit vector, if you
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3157-1
+00:16:36.508 --> 00:16:39.838
+normalize the vector by its
+magnitude and then you do this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3157-2
+00:16:39.838 --> 00:16:43.394
+comparison if they're parallel
+to one another, it will be one.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3170-0
+00:16:43.544 --> 00:16:47.161
+If they're not parallel to one
+another, it'll be a positive
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3170-1
+00:16:47.161 --> 00:16:47.824
+value, but.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3174-0
+00:16:48.324 --> 00:16:48.544
+Yeah.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3175-0
+00:16:49.684 --> 00:16:50.034
+Right.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3187-0
+00:16:50.044 --> 00:16:52.784
+It won't be one and -, 1 and
+similarly here.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3188-0
+00:16:52.144 --> 00:16:52.774
+But the purpose?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3191-0
+00:16:54.974 --> 00:16:55.304
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3209-0
+00:16:55.314 --> 00:16:56.364
+Yeah, but in the perfect.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3211-0
+00:16:56.414 --> 00:16:59.144
+So that that's for the parallel
+and antiparallel, but in the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3211-1
+00:16:59.144 --> 00:16:59.994
+perpendicular case.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3221-0
+00:17:02.614 --> 00:17:05.664
+You don't need to do unit vector
+stuff.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3236-0
+00:17:05.674 --> 00:17:07.334
+It's just you just stop them.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3238-0
+00:17:07.004 --> 00:17:08.174
+Yeah, this will always be true.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3249-0
+00:17:09.174 --> 00:17:10.364
+OK. Thanks.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3243-0
+00:17:10.254 --> 00:17:10.474
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3247-0
+00:17:11.424 --> 00:17:11.624
+Yeah.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3267-0
+00:17:11.634 --> 00:17:15.354
+And in fact, if you know, I'll
+do the thing as Professor quote.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3301-0
+00:17:15.584 --> 00:17:18.168
+If you wanna prove this to
+yourself, pick two vectors that
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3301-1
+00:17:18.168 --> 00:17:20.883
+you know are orthogonal to one
+another and do the dot product
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3301-2
+00:17:20.883 --> 00:17:22.984
+and you'll see why it always
+comes out as zero.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3304-0
+00:17:25.294 --> 00:17:25.514
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3316-0
+00:17:26.684 --> 00:17:29.754
+All right, so normal vectors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3309-0
+00:17:27.014 --> 00:17:27.214
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3333-0
+00:17:29.844 --> 00:17:32.649
+So normal vectors are
+perpendicular to surfaces, so
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3333-1
+00:17:32.649 --> 00:17:34.644
+that's just what a normal vector
+is.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3363-0
+00:17:35.164 --> 00:17:39.887
+OK, so if we have a surface, we
+can define a normal vector for
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3363-1
+00:17:39.887 --> 00:17:44.310
+that surface, and that normal
+vector he is any vector that
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3363-2
+00:17:44.310 --> 00:17:45.134
+meets this.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3366-0
+00:17:46.864 --> 00:17:47.114
+Uh.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3376-0
+00:17:47.124 --> 00:17:49.747
+Condition in that is
+perpendicular to the surface
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3376-1
+00:17:49.747 --> 00:17:50.114
+itself.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3389-0
+00:17:50.444 --> 00:17:53.074
+So here you see this plane
+that's being visualized.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3424-0
+00:17:53.084 --> 00:17:56.081
+And here are two normal vectors
+to this plane, and what you can
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3424-1
+00:17:56.081 --> 00:17:59.170
+see is that these normal vectors
+themselves are perpendicular and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3424-2
+00:17:59.170 --> 00:18:01.464
+coming directly off that plane
+off that surface.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3445-0
+00:18:02.264 --> 00:18:05.620
+OK, so normal vectors are often
+used for defining geometric
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3445-1
+00:18:05.620 --> 00:18:07.744
+object or indicate its origin
+itself.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3465-0
+00:18:09.124 --> 00:18:12.793
+So remember, last time I was
+talking about how we think about
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3465-1
+00:18:12.793 --> 00:18:15.574
+classification and decision
+boundaries, right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3474-0
+00:18:16.204 --> 00:18:18.334
+And I was also talking about
+hyperplanes.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3480-0
+00:18:18.344 --> 00:18:19.434
+I mentioned hyperplanes.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3497-0
+00:18:19.764 --> 00:18:23.106
+So hyperplane, so a plane is a
+flat geometric object that
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3497-1
+00:18:23.106 --> 00:18:24.604
+divides the space in half.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3501-0
+00:18:25.834 --> 00:18:26.264
+Umm.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3531-0
+00:18:26.634 --> 00:18:30.224
+So if we have a space with end
+dimensions, a plane is going to
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3531-1
+00:18:30.224 --> 00:18:33.358
+be an n -, 1 dimensional object,
+and that's known as a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3531-2
+00:18:33.358 --> 00:18:33.984
+hyperplane.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3550-0
+00:18:33.994 --> 00:18:37.369
+In general, it's known as a
+hyperplane, so this might be a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3550-1
+00:18:37.369 --> 00:18:38.684
+line in two dimensions.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3571-0
+00:18:38.754 --> 00:18:42.143
+It might be a plane that we
+understand in three dimensions,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3571-1
+00:18:42.143 --> 00:18:43.724
+or it could be a hyperplane.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3585-0
+00:18:43.734 --> 00:18:47.164
+If we go to four or five 6710, a
+100 dimensions.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3640-0
+00:18:47.414 --> 00:18:52.510
+OK, So what you can see here is
+we can define this plane using a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3640-1
+00:18:52.510 --> 00:18:57.528
+point on the plane and a normal
+vector, so that is one way that
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3640-2
+00:18:57.528 --> 00:19:02.075
+we can define planes themselves
+that go through spaces is
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3640-3
+00:19:02.075 --> 00:19:06.857
+through just a single point that
+resides on that plane and a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3640-4
+00:19:06.857 --> 00:19:07.954
+normal vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3650-0
+00:19:08.004 --> 00:19:10.914
+OK, so planes are defined.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3670-0
+00:19:10.924 --> 00:19:14.892
+So this is the normal form using
+a normal vector N and a point
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3670-1
+00:19:14.892 --> 00:19:16.844
+are not that lies on the plane.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3693-0
+00:19:19.424 --> 00:19:24.984
+OK, so all points are for which
+the equation is true lie on the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3693-1
+00:19:24.984 --> 00:19:28.024
+plane and all points that are
+not.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3719-0
+00:19:28.674 --> 00:19:32.947
+Sorry, all other points are not
+on the plane, So what this means
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3719-1
+00:19:32.947 --> 00:19:34.984
+is we can define our not right.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3755-0
+00:19:35.554 --> 00:19:39.531
+We can define a normal, uh
+vector and then given these two
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3755-1
+00:19:39.531 --> 00:19:43.710
+all this constant, these are
+going to define a plane in space
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3755-2
+00:19:43.710 --> 00:19:47.214
+for us and this is related
+through this expression.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3762-0
+00:19:47.224 --> 00:19:48.894
+So what does this expression
+doing?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3792-0
+00:19:49.024 --> 00:19:52.680
+Well, I just told you earlier
+that if we take two points and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3792-1
+00:19:52.680 --> 00:19:56.155
+we subtract them, we got the
+vector that spans in between
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3792-2
+00:19:56.155 --> 00:19:56.874
+them, right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3826-0
+00:19:58.404 --> 00:20:02.666
+So if I have this point P on my
+plane and I or we could think of
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3826-1
+00:20:02.666 --> 00:20:06.534
+this as R not and I have another
+point that's on my plane.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3846-0
+00:20:06.664 --> 00:20:10.202
+If I subtract these two, I'm
+going to get a vector that rides
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3846-1
+00:20:10.202 --> 00:20:10.544
+along.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3849-0
+00:20:10.554 --> 00:20:13.804
+That's in line with my plane,
+right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3853-0
+00:20:14.864 --> 00:20:15.384
+You'll see that.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3871-0
+00:20:17.544 --> 00:20:23.596
+So that's going to describe a,
+A, an angle or direction and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3871-1
+00:20:23.596 --> 00:20:24.604
+magnitude.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3914-0
+00:20:25.684 --> 00:20:30.402
+And then what this relationship
+says is I also told you that if
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3914-1
+00:20:30.402 --> 00:20:34.972
+we take a vector and we dot it
+with another vector which this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3914-2
+00:20:34.972 --> 00:20:39.615
+vector rides along the plane, I
+said that this is always going
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3914-3
+00:20:39.615 --> 00:20:41.384
+to equal 0 for for what?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3934-0
+00:20:45.424 --> 00:20:46.424
+Perpendicular vectors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3936-0
+00:20:45.694 --> 00:20:48.514
+This is grade class, maybe I
+shouldn't ask active questions.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3945-0
+00:20:49.514 --> 00:20:49.994
+What was that?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3950-0
+00:20:50.544 --> 00:20:51.734
+Not for perpendicular vectors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3953-0
+00:20:52.384 --> 00:20:53.744
+Yeah, so perpendicular.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3962-0
+00:20:53.754 --> 00:20:56.774
+So this is a vector that rides
+on your plane.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3968-0
+00:20:56.864 --> 00:20:57.674
+This is a vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3992-0
+00:20:57.684 --> 00:21:01.108
+That's normal to your plane, so
+these two together is going to
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3992-1
+00:21:01.108 --> 00:21:03.988
+equal 0 because they're
+perpendicular to each other,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/3992-2
+00:21:03.988 --> 00:21:04.314
+right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4010-0
+00:21:04.324 --> 00:21:06.445
+The normal vector is going to be
+perpendicular to the vector
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4010-1
+00:21:06.445 --> 00:21:07.174
+that's on your plane.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4014-0
+00:21:07.214 --> 00:21:07.654
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4019-0
+00:21:07.964 --> 00:21:08.874
+So that's where that comes from.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4034-0
+00:21:10.394 --> 00:21:13.052
+So the equation measures the
+angle between the normal and the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4034-1
+00:21:13.052 --> 00:21:13.394
+factors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4050-0
+00:21:13.404 --> 00:21:16.040
+If the two vectors are
+orthogonal, then they're not
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4050-1
+00:21:16.040 --> 00:21:17.104
+product is all right.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4102-0
+00:21:17.234 --> 00:21:20.105
+So checking we're point lies
+relative to a plane, so we can
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4102-1
+00:21:20.105 --> 00:21:23.024
+use a hyperplane to divide a
+space in half, and knowing that
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4102-2
+00:21:23.024 --> 00:21:26.086
+the dot product measures angles,
+we can use the definition of a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4102-3
+00:21:26.086 --> 00:21:29.244
+hyperplane to determine on which
+side of the plane to point lies.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4110-0
+00:21:29.414 --> 00:21:31.324
+This is really kind of cool,
+right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4127-0
+00:21:31.364 --> 00:21:35.710
+So we have this condition which
+can help us find points on the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4127-1
+00:21:35.710 --> 00:21:36.124
+plane.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4187-0
+00:21:36.554 --> 00:21:40.404
+But if we substitute this out
+where this points on the plane,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4187-1
+00:21:40.404 --> 00:21:43.818
+this normal vector is normal to
+the plane and we start
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4187-2
+00:21:43.818 --> 00:21:47.605
+substituting points in here what
+we will find is that if the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4187-3
+00:21:47.605 --> 00:21:51.020
+point ends if the if, this
+evaluates out to a positive
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4187-4
+00:21:51.020 --> 00:21:54.434
+value, then it's going to be on
+one side of the plane.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4234-0
+00:21:54.544 --> 00:21:57.773
+If this evaluates out to a
+negative value, it's going to be
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4234-1
+00:21:57.773 --> 00:22:01.217
+on the other side of the plane,
+and if it evaluates out to zero
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4234-2
+00:22:01.217 --> 00:22:04.553
+then it's going to ride right
+along the plane, and this forms
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4234-3
+00:22:04.553 --> 00:22:06.274
+the basis for a lot of decision.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4302-0
+00:22:06.284 --> 00:22:10.180
+Wow, this forms the basis for
+logistic regression, at least in
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4302-1
+00:22:10.180 --> 00:22:14.013
+that if we can describe these
+two things we're describing the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4302-2
+00:22:14.013 --> 00:22:18.094
+hyperplane, the hyperplanes, the
+model, and then by applying this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4302-3
+00:22:18.094 --> 00:22:22.113
+model to new points, we can tell
+which side of the plane a point
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4302-4
+00:22:22.113 --> 00:22:25.700
+actually resides on, or which
+class to classify it as you
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4302-5
+00:22:25.700 --> 00:22:26.194
+digging.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4307-0
+00:22:26.974 --> 00:22:27.914
+Alright, that's great.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4313-0
+00:22:27.924 --> 00:22:29.804
+Well, is the question. Umm.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4320-0
+00:22:32.454 --> 00:22:33.594
+Wait, is this recent Rees?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4342-0
+00:22:36.244 --> 00:22:37.544
+And the main.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4330-0
+00:22:36.364 --> 00:22:36.744
+Uh, yeah.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4363-0
+00:22:36.754 --> 00:22:40.088
+I was just talking about like
+the math thematical explanation
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4363-1
+00:22:40.088 --> 00:22:42.884
+for why it always works out to
+be 0 uh in the chat.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4375-0
+00:22:42.024 --> 00:22:46.902
+Ohh yeah yeah, you do have the
+the relationship to cosign for
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4375-1
+00:22:46.902 --> 00:22:48.554
+dot products as well.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4380-0
+00:22:50.034 --> 00:22:52.484
+OK, alright, cool.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4389-0
+00:22:52.614 --> 00:22:55.104
+So, oh, so this is what this is
+saying.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4419-0
+00:22:55.114 --> 00:22:58.744
+So if you have your normal
+vector and your point on the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4419-1
+00:22:58.744 --> 00:23:02.762
+plane, and you evaluate R and
+it's equal to 0, the point lies
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4419-2
+00:23:02.762 --> 00:23:03.604
+on the plane.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4461-0
+00:23:04.434 --> 00:23:07.401
+Otherwise, if this is greater
+than zero, then the point lies
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4461-1
+00:23:07.401 --> 00:23:10.514
+on the same side of the plane as
+the normal vector, and if this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4461-2
+00:23:10.514 --> 00:23:13.481
+is negative, then the point lies
+on the opposite side of the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4461-3
+00:23:13.481 --> 00:23:14.794
+plane as the normal vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4467-0
+00:23:17.174 --> 00:23:18.544
+This is also neat.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4478-0
+00:23:18.834 --> 00:23:21.804
+Well, I think I think I have
+that later.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4482-0
+00:23:21.814 --> 00:23:22.924
+OK, alright.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4486-0
+00:23:22.994 --> 00:23:23.904
+That makes sense to everyone.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4490-0
+00:23:24.334 --> 00:23:25.264
+Everyone driving with me.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4496-0
+00:23:27.514 --> 00:23:28.964
+OK, alright.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4500-0
+00:23:29.114 --> 00:23:30.124
+So let's now talk.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4503-0
+00:23:30.234 --> 00:23:30.994
+Those were vectors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4512-0
+00:23:31.004 --> 00:23:32.724
+Let's talk a little bit about
+matrices.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4530-0
+00:23:32.814 --> 00:23:35.758
+So matrices are ordered
+collections of vectors, so
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4530-1
+00:23:35.758 --> 00:23:38.124
+that's a great way to think of
+matrices.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4547-0
+00:23:38.644 --> 00:23:42.129
+So we can have either column
+vectors or row vectors in a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4547-1
+00:23:42.129 --> 00:23:42.984
+matrix, right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4559-0
+00:23:43.024 --> 00:23:45.664
+So here we have column vectors
+and.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4562-0
+00:23:45.674 --> 00:23:46.824
+These are row vectors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4576-0
+00:23:47.374 --> 00:23:50.664
+OK, so this matrix is made up of
+three row vectors.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4602-0
+00:23:50.754 --> 00:23:54.847
+That's one way of thinking about
+uh, and they're used to store
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4602-1
+00:23:54.847 --> 00:23:58.485
+and perform operations on groups
+of vectors in a single
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4602-2
+00:23:58.485 --> 00:23:59.134
+operation.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4666-0
+00:23:59.584 --> 00:24:03.463
+So I think you can appreciate
+that we have feature matrices
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4666-1
+00:24:03.463 --> 00:24:07.470
+that what we're doing in pandas
+is we're creating data frames
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4666-2
+00:24:07.470 --> 00:24:11.284
+and then what we can do with
+Numpy is if we can get all of
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4666-3
+00:24:11.284 --> 00:24:15.356
+these values in our data frame
+into the same data type, we can
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4666-4
+00:24:15.356 --> 00:24:17.424
+make a feature matrix out of it.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4669-0
+00:24:18.614 --> 00:24:18.984
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4704-0
+00:24:19.574 --> 00:24:23.037
+And uh, our interpretation of
+matrices follows that in that
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4704-1
+00:24:23.037 --> 00:24:26.153
+each row is going to be an
+observation, and that each
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4704-2
+00:24:26.153 --> 00:24:29.384
+column is going to be a new
+feature or a new dimension.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4723-0
+00:24:31.474 --> 00:24:36.914
+OK, alright, so here are three
+points that are matrix actually
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4723-1
+00:24:36.914 --> 00:24:37.604
+defines.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4765-0
+00:24:37.934 --> 00:24:41.641
+So in our interpretation of this
+matrix, we can see that we have
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4765-1
+00:24:41.641 --> 00:24:45.176
+three points, one point at 131
+point at 5 seven and one point
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4765-2
+00:24:45.176 --> 00:24:48.084
+at 911, and you see them all in
+a line right here.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4769-0
+00:24:48.534 --> 00:24:48.904
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4782-0
+00:24:48.994 --> 00:24:51.224
+It just so happens that these
+end up being in a line.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4788-0
+00:24:51.454 --> 00:24:53.564
+There's nothing requiring that,
+though.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4811-0
+00:24:55.244 --> 00:24:58.199
+OK, so each row represents a
+point and each column then
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4811-1
+00:24:58.199 --> 00:25:01.154
+represents a dimension or the
+value along a given axis.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4824-0
+00:25:04.674 --> 00:25:07.474
+Alright, so how we represent
+matrices?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4846-0
+00:25:07.484 --> 00:25:11.692
+So a variable names are with a
+capital letter typically, and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4846-1
+00:25:11.692 --> 00:25:14.174
+then we have an arrow over the
+top.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4854-0
+00:25:14.854 --> 00:25:17.284
+So matrices use lower case in an
+error.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4857-0
+00:25:17.294 --> 00:25:17.814
+Excuse me?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4873-0
+00:25:17.854 --> 00:25:21.225
+Vectors use lowercase and an
+arrow matrices use uppercase and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4873-1
+00:25:21.225 --> 00:25:21.714
+an arrow.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4887-0
+00:25:22.634 --> 00:25:26.248
+OK, matrices are described by
+the number of rows that they
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4887-1
+00:25:26.248 --> 00:25:26.554
+have.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4935-0
+00:25:26.564 --> 00:25:30.528
+The number of columns they have
+and the type of number, so you
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4935-1
+00:25:30.528 --> 00:25:34.491
+might see something like this
+where this is describing we have
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4935-2
+00:25:34.491 --> 00:25:38.455
+matrix a here which is made up
+of real valued numbers and it's
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4935-3
+00:25:38.455 --> 00:25:41.034
+dimensions are 5 rows and three
+columns.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4948-0
+00:25:42.144 --> 00:25:45.616
+Or we have 5 observations in
+this described by the same 3
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4948-1
+00:25:45.616 --> 00:25:46.154
+features.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4950-0
+00:25:47.744 --> 00:25:47.964
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4958-0
+00:25:50.474 --> 00:25:52.654
+All right can be described
+using.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4970-0
+00:25:52.664 --> 00:25:55.204
+Ohh, we can also describe them
+using indices directly.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4988-0
+00:25:55.214 --> 00:25:59.850
+So if I wanted to actually refer
+to, uh, a vector in here, I
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/4988-1
+00:25:59.850 --> 00:26:00.914
+could do that.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5009-0
+00:26:00.964 --> 00:26:06.244
+I could also refer to a single
+element 2 as described by its.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5029-0
+00:26:06.684 --> 00:26:12.828
+In this case row and column OK,
+so it's always row, then column
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5029-1
+00:26:12.828 --> 00:26:14.844
+or rise and then run.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5031-0
+00:26:15.634 --> 00:26:16.894
+OK, alright.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5058-0
+00:26:18.104 --> 00:26:22.007
+So we can use and be arrays in
+Numpy to not only describe
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5058-1
+00:26:22.007 --> 00:26:25.774
+vectors, but we can also use
+them to describe matrices.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5074-0
+00:26:26.274 --> 00:26:30.096
+So to do that, we're going to
+use are nested listed nested
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5074-1
+00:26:30.096 --> 00:26:30.484
+lists.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5110-0
+00:26:30.944 --> 00:26:34.473
+So here we have three lists
+within a larger list, so each
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5110-1
+00:26:34.473 --> 00:26:38.245
+element in this larger list is
+made up of a list, and in this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5110-2
+00:26:38.245 --> 00:26:39.644
+case it has two values.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5113-0
+00:26:41.364 --> 00:26:41.744
+All right.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5133-0
+00:26:42.364 --> 00:26:46.902
+So if we do this, we're going to
+get a shape and call the shape
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5133-1
+00:26:46.902 --> 00:26:48.674
+property on the ND array.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5146-0
+00:26:48.944 --> 00:26:51.014
+The shape is gonna tell us that
+it's three comma two.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5196-0
+00:26:51.344 --> 00:26:55.665
+Once you start working with
+matrices in Numpy at all, really
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5196-1
+00:26:55.665 --> 00:26:59.915
+really rely on shape, I use
+shape all the time because what
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5196-2
+00:26:59.915 --> 00:27:04.165
+we'll see is a lot of matrix
+operations depend on the shape
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5196-3
+00:27:04.165 --> 00:27:07.919
+of the matrix itself and
+operations will fail if you
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5196-4
+00:27:07.919 --> 00:27:10.044
+don't meet the required shape.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5206-0
+00:27:10.104 --> 00:27:11.234
+I guess you can think of it that
+way.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5208-0
+00:27:11.994 --> 00:27:12.214
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5234-0
+00:27:13.834 --> 00:27:18.214
+And similarly to creating
+vectors, we can use methods like
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5234-1
+00:27:18.214 --> 00:27:22.964
+ones and zeros and provide the
+dimensions that we have in here.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5264-0
+00:27:23.014 --> 00:27:28.462
+So something to keep in mind
+here, there's a gotcha that I
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5264-1
+00:27:28.462 --> 00:27:34.370
+want you to be aware of is that
+Numpy, for whatever reason, can
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5264-2
+00:27:34.370 --> 00:27:34.924
+use a.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5285-0
+00:27:35.054 --> 00:27:39.450
+You can define a ND array as
+having a single dimension, so
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5285-1
+00:27:39.450 --> 00:27:41.834
+that's what I showed you before.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5302-0
+00:27:42.134 --> 00:27:46.375
+So you can describe an empty
+array as vector of three
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5302-1
+00:27:46.375 --> 00:27:47.474
+elements long.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5305-0
+00:27:48.894 --> 00:27:50.644
+That is actually different.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5365-0
+00:27:50.694 --> 00:27:55.269
+It's a different representation
+than another option that this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5365-1
+00:27:55.269 --> 00:27:59.843
+doesn't immediately show you,
+but another option is you could
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5365-2
+00:27:59.843 --> 00:28:04.712
+describe a vector as three comma
+one, so it's going to be thought
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5365-3
+00:28:04.712 --> 00:28:09.212
+of as a matrix in ohm in Numpy,
+but it is going to have just
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5365-4
+00:28:09.212 --> 00:28:11.794
+elements along a single
+dimension.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5371-0
+00:28:13.474 --> 00:28:14.094
+Does that make sense?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5402-0
+00:28:14.104 --> 00:28:18.295
+So wrong and depending on the
+operation that you're doing,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5402-1
+00:28:18.295 --> 00:28:22.770
+some of them are expecting like
+if you trying to mix and match
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5402-2
+00:28:22.770 --> 00:28:25.824
+like you define one vector as a
+Singleton.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5421-0
+00:28:27.724 --> 00:28:31.297
+Dimension and you describe
+another vector as being like 3
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5421-1
+00:28:31.297 --> 00:28:31.974
+comma, one.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5424-0
+00:28:32.304 --> 00:28:34.174
+Those have different
+interpretations.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5433-0
+00:28:34.284 --> 00:28:36.014
+OK, so they don't always jive.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5470-0
+00:28:37.294 --> 00:28:40.149
+So if you start to see things
+that are really weird and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5470-1
+00:28:40.149 --> 00:28:43.310
+failing you shape to figure out
+what is actually interpreting
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5470-2
+00:28:43.310 --> 00:28:46.369
+the dimensions as and make sure
+that you're consistent with
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5470-3
+00:28:46.369 --> 00:28:46.674
+those.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5478-0
+00:28:47.054 --> 00:28:48.904
+I like in the way that I think
+about it.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5538-0
+00:28:48.914 --> 00:28:53.896
+Is, I think about everything as
+these matrices, so I would add a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5538-1
+00:28:53.896 --> 00:28:58.341
+like a three comma one if I
+wanted to represent a vector,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5538-2
+00:28:58.341 --> 00:29:02.940
+but also appreciate that A3
+comma one factor is going to be
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5538-3
+00:29:02.940 --> 00:29:07.538
+in this case it would be a
+column vector and A1 comma three
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5538-4
+00:29:07.538 --> 00:29:09.684
+is going to be a row vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5544-0
+00:29:12.214 --> 00:29:12.374
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5553-0
+00:29:13.664 --> 00:29:15.564
+You driving, OK?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5556-0
+00:29:17.104 --> 00:29:17.674
+Doesn't I?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5626-0
+00:29:17.764 --> 00:29:22.264
+We have a number of operations
+that we can perform with Numpy,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5626-1
+00:29:22.264 --> 00:29:26.478
+so the way I think about Numpy
+is Numpy is really a linear
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5626-2
+00:29:26.478 --> 00:29:30.763
+algebra library for Python, so
+transposing so transposing a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5626-3
+00:29:30.763 --> 00:29:34.548
+common ohm operation,
+transposing what it does is it
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5626-4
+00:29:34.548 --> 00:29:39.048
+rotates the matrix around the
+diagonal so that if we transpose
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5626-5
+00:29:39.048 --> 00:29:43.476
+it, we're going to flip all the
+elements in the matrix across
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5626-6
+00:29:43.476 --> 00:29:44.404
+the diagonal.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5681-0
+00:29:44.874 --> 00:29:48.547
+So what that means is if you
+have a square matrix, so if you
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5681-1
+00:29:48.547 --> 00:29:52.340
+have a matrix that's two by two
+or four by four, it's going to
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5681-2
+00:29:52.340 --> 00:29:56.072
+keep the diagonal the same, and
+it's going to flip all of the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5681-3
+00:29:56.072 --> 00:29:59.684
+things in the top triangle into
+the bottom, and vice versa.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5714-0
+00:30:00.314 --> 00:30:04.095
+That means if you have a non
+square matrix like a three comma
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5714-1
+00:30:04.095 --> 00:30:07.936
+two then what is going to do is
+it's going to make it into a 2
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5714-2
+00:30:07.936 --> 00:30:09.094
+comma three matrix.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5718-0
+00:30:09.284 --> 00:30:09.654
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5722-0
+00:30:09.664 --> 00:30:11.134
+So it actually flips those
+dimensions.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5738-0
+00:30:15.784 --> 00:30:19.754
+So to transpose things here we
+have this three comma two.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5765-0
+00:30:20.214 --> 00:30:25.219
+You can use the T the T is the
+transpose or calls transpose on
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5765-1
+00:30:25.219 --> 00:30:28.634
+the matrix, and in this case we
+transpose.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5789-0
+00:30:28.684 --> 00:30:36.255
+A B then returns to row vectors
+that is 159 and three 711 and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5789-1
+00:30:36.255 --> 00:30:38.574
+its shape is now 2.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5797-0
+00:30:38.584 --> 00:30:45.814
+Three, OK, alright, now
+operations on matrices.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5822-0
+00:30:46.304 --> 00:30:50.829
+So we have now a matrix and we
+can dot a matrix with a vector
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5822-1
+00:30:50.829 --> 00:30:53.674
+and this is going to give us a
+vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5830-0
+00:30:54.044 --> 00:30:55.624
+Ohh arsalon I didn't see your
+hand.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5840-0
+00:30:55.664 --> 00:30:56.704
+I don't know how long your
+hands.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5844-0
+00:30:56.704 --> 00:30:57.014
+Don't.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5852-0
+00:30:57.564 --> 00:30:57.964
+What's up?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5860-0
+00:30:58.254 --> 00:31:01.784
+Uh, I just rose it on the last
+slide.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5874-0
+00:31:01.934 --> 00:31:06.284
+I've seen this idea of
+transposing matrices, either in
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5874-1
+00:31:06.284 --> 00:31:07.944
+a preprocessing step.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5882-0
+00:31:08.114 --> 00:31:10.504
+I think it was prepro data
+preprocessing.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5884-0
+00:31:10.754 --> 00:31:11.164
+Why?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5891-0
+00:31:11.174 --> 00:31:11.904
+Why do we do that?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5905-0
+00:31:13.744 --> 00:31:16.398
+I think there are various
+reasons why we might wanna do
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5905-1
+00:31:16.398 --> 00:31:16.634
+that.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5909-0
+00:31:16.644 --> 00:31:18.284
+If you wanna look at features.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5957-0
+00:31:20.134 --> 00:31:23.845
+For us, one reason that we might
+want to do it as if we wanna
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5957-1
+00:31:23.845 --> 00:31:27.136
+look at features versus
+observations, like if we wanna
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5957-2
+00:31:27.136 --> 00:31:30.487
+flip that information, it
+depends on the representation
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/5957-3
+00:31:30.487 --> 00:31:31.624
+that you wanna use.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6012-0
+00:31:31.674 --> 00:31:35.765
+And if you wanna calculate
+things like covariance matrices,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6012-1
+00:31:35.765 --> 00:31:40.060
+what you can do is you can use
+the transpose multiplied by the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6012-2
+00:31:40.060 --> 00:31:44.218
+matrix itself and what that
+effectively does is it will it's
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6012-3
+00:31:44.218 --> 00:31:48.445
+leading to a a covariance matrix
+which tells you how does one
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6012-4
+00:31:48.445 --> 00:31:51.444
+feature actually vary with
+another feature.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6044-0
+00:31:56.024 --> 00:32:02.212
+OK, so multiplication so we can
+do dot products between a matrix
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6044-1
+00:32:02.212 --> 00:32:07.828
+and a vector, but we have to
+adhere to a certain shape and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6044-2
+00:32:07.828 --> 00:32:08.684
+standard.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6067-0
+00:32:09.154 --> 00:32:12.525
+So what you get out of this is
+another vector, and this is
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6067-1
+00:32:12.525 --> 00:32:14.524
+where the shapes starts to
+matter.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6098-0
+00:32:14.874 --> 00:32:20.494
+So in this case this is going to
+be a 3 comma 2SO3 rows by two
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6098-1
+00:32:20.494 --> 00:32:24.954
+columns and this is A2 rows by
+one column, right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6110-0
+00:32:27.364 --> 00:32:29.754
+So the inner dimensions have to
+match.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6131-0
+00:32:30.104 --> 00:32:33.312
+So what this is effectively
+doing is it's doing the dot
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6131-1
+00:32:33.312 --> 00:32:36.348
+product on these three
+observations with this vector
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6131-2
+00:32:36.348 --> 00:32:36.634
+here.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6173-0
+00:32:36.964 --> 00:32:43.038
+So this takes 1 * 1 + 3 times -,
+1, and we get out here in this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6173-1
+00:32:43.038 --> 00:32:49.016
+element -, 2, five times 1 + 7
+times -, 1 we get, -, 2, and so
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6173-2
+00:32:49.016 --> 00:32:50.534
+on and so forth.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6197-0
+00:32:50.834 --> 00:32:56.889
+OK, so the resulting, umm shape
+then of this vector is going to
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6197-1
+00:32:56.889 --> 00:32:59.254
+be the outside dimension.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6231-0
+00:32:59.264 --> 00:33:03.041
+So this is a 3 comma two and
+this is a 2 comma one, so the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6231-1
+00:33:03.041 --> 00:33:06.626
+inside dimensions must match to
+be able to perform this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6231-2
+00:33:06.626 --> 00:33:08.994
+operation and then you get a
+vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6240-0
+00:33:09.004 --> 00:33:10.734
+That's the outside dimension.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6250-0
+00:33:10.744 --> 00:33:12.854
+So in this case two and two
+match.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6261-0
+00:33:12.864 --> 00:33:16.824
+So we could do it and then we
+have a 3 comma one, OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6279-0
+00:33:19.974 --> 00:33:24.583
+Alright, if those rules do not
+match you, it is an illegal
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6279-1
+00:33:24.583 --> 00:33:25.364
+operation.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6296-0
+00:33:25.374 --> 00:33:29.344
+Cannot perform that and you will
+get goofed and Python will
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6296-1
+00:33:29.344 --> 00:33:30.534
+complain about it.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6303-0
+00:33:31.494 --> 00:33:33.064
+OK, so check their ships.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6305-0
+00:33:34.964 --> 00:33:35.414
+Umm.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6323-0
+00:33:37.774 --> 00:33:40.349
+All right, so the length of the
+vector must match the number of
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6323-1
+00:33:40.349 --> 00:33:41.234
+columns in the matrix.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6330-0
+00:33:41.244 --> 00:33:42.034
+That's what I just said.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6347-0
+00:33:42.354 --> 00:33:42.704
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6355-0
+00:33:43.454 --> 00:33:48.349
+We also support multiplication
+on matrices, so this works in a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6355-1
+00:33:48.349 --> 00:33:52.854
+very similar way, so that
+dimensional rule still applies.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6377-0
+00:33:52.864 --> 00:33:55.534
+So here we have a three
+comments, two and this is a 2
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6377-1
+00:33:55.534 --> 00:33:57.214
+comma two so we can perform
+this.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6414-0
+00:33:57.534 --> 00:34:00.678
+It effectively performs
+sequential dot products though,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6414-1
+00:34:00.678 --> 00:34:04.102
+so it'll be the dot product
+between this row vector and this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6414-2
+00:34:04.102 --> 00:34:07.470
+column vector will be then the
+dot product between this row
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6414-3
+00:34:07.470 --> 00:34:09.154
+vector and this column vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6423-0
+00:34:09.424 --> 00:34:10.724
+So that's the first dot product.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6428-0
+00:34:10.734 --> 00:34:11.594
+That's the second one.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6446-0
+00:34:12.224 --> 00:34:15.333
+This row now and this column,
+this row, this column so on and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6446-1
+00:34:15.333 --> 00:34:15.784
+so forth.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6450-0
+00:34:16.944 --> 00:34:19.514
+You do so again.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6454-0
+00:34:19.524 --> 00:34:20.364
+That rule applies.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6467-0
+00:34:20.374 --> 00:34:22.274
+This is a 3 comma, 22 comma, 2.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6483-0
+00:34:22.824 --> 00:34:26.230
+The inside dimensions match two
+and two match and then we get a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6483-1
+00:34:26.230 --> 00:34:27.134
+resulting vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6488-0
+00:34:27.144 --> 00:34:28.004
+That's three kind of two.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6490-0
+00:34:30.774 --> 00:34:30.994
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6514-0
+00:34:33.614 --> 00:34:36.459
+The number of columns in the
+first matrix must match the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6514-1
+00:34:36.459 --> 00:34:38.504
+number of rows in the second to
+perform.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6534-0
+00:34:39.544 --> 00:34:43.116
+So the way that we can do this
+is here we have matrix vector
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6534-1
+00:34:43.116 --> 00:34:43.994
+multiplication.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6566-0
+00:34:44.004 --> 00:34:47.891
+So you can use the dot product
+between a matrix and a vector
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6566-1
+00:34:47.891 --> 00:34:51.522
+and that will return this array
+here and then for matrix
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6566-2
+00:34:51.522 --> 00:34:54.644
+multiplication you can actually
+use dot as well.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6582-0
+00:34:56.234 --> 00:35:00.363
+All right, you can also use Matt
+Mull, so NP dot Matt Mull also
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6582-1
+00:35:00.363 --> 00:35:02.104
+does matrix multiplication.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6594-0
+00:35:04.604 --> 00:35:08.294
+OK, so interpreting matrix
+multiplication, why is this
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6594-1
+00:35:08.294 --> 00:35:08.964
+important?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6604-0
+00:35:09.474 --> 00:35:11.284
+So it's important for a number
+of reasons.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6626-0
+00:35:11.294 --> 00:35:16.200
+So one Model, 1 mental model
+that you can use for application
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6626-1
+00:35:16.200 --> 00:35:20.234
+of a matrix onto another matrix
+is transformation.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6663-0
+00:35:20.984 --> 00:35:24.175
+So a lot of times you could
+think of if you're doing matrix
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6663-1
+00:35:24.175 --> 00:35:27.632
+multiplication between a matrix
+and a vector, you're going to be
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6663-2
+00:35:27.632 --> 00:35:30.609
+transforming this vector in some
+way based off of these
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6663-3
+00:35:30.609 --> 00:35:31.194
+parameters.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6677-0
+00:35:31.764 --> 00:35:34.824
+So the best way to conceive of
+it are conceptualized.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6733-0
+00:35:34.834 --> 00:35:40.501
+This is what we can end up doing
+is we can end up forming our
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6733-1
+00:35:40.501 --> 00:35:46.259
+multiple linear regression model
+in the form of linear algebra
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6733-2
+00:35:46.259 --> 00:35:51.835
+where the coefficients of our
+model is a vector and then the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6733-3
+00:35:51.835 --> 00:35:57.684
+data that we're applying it to
+is a matrix, our feature matrix.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6757-0
+00:35:58.764 --> 00:36:01.920
+So you can do matrix
+multiplication between these two
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6757-1
+00:36:01.920 --> 00:36:05.484
+and what it ends up with is that
+ends up with your response,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6757-2
+00:36:05.484 --> 00:36:05.834
+right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6782-0
+00:36:05.904 --> 00:36:10.760
+So in in your project, you're
+solving for multiple linear
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6782-1
+00:36:10.760 --> 00:36:13.774
+regression on your data set,
+right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6793-0
+00:36:14.024 --> 00:36:16.044
+And how many features do you
+have in your data set?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6798-0
+00:36:20.364 --> 00:36:21.184
+I don't remember.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6817-0
+00:36:21.224 --> 00:36:23.577
+Sorry, I'm asking open ended
+questions that doesn't really
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6817-1
+00:36:23.577 --> 00:36:24.374
+work in this for me.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6831-0
+00:36:24.484 --> 00:36:28.704
+Ohh, I was teaching earlier
+today in person.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6837-0
+00:36:29.284 --> 00:36:32.694
+Umm, So what was I saying?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6846-0
+00:36:32.704 --> 00:36:34.214
+So you might have 10 features,
+right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6857-0
+00:36:34.224 --> 00:36:39.654
+You have beds, baths, square
+footage, latitude, longitude.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6863-0
+00:36:39.724 --> 00:36:41.054
+You have all of those.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6886-0
+00:36:41.144 --> 00:36:44.985
+You apply your multiple linear
+regression model to it and then
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6886-1
+00:36:44.985 --> 00:36:48.704
+it transforms that into a single
+value, which is your price.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6891-0
+00:36:48.714 --> 00:36:50.314
+Your response right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6900-0
+00:36:50.734 --> 00:36:53.134
+So it's taking some kind of
+transformation.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6935-0
+00:36:53.244 --> 00:36:56.764
+It's applying it to your matrix,
+which is your feature matrix and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6935-1
+00:36:56.764 --> 00:36:59.484
+what you get out is you get a
+vector out that is a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6935-2
+00:36:59.484 --> 00:37:02.364
+transformation of all of your
+data into the response.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6945-0
+00:37:03.574 --> 00:37:05.894
+That's the same thing that
+matrix multiplication is doing.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6979-0
+00:37:06.554 --> 00:37:11.037
+Umm, one of the reasons that we
+do it this way is that it we
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6979-1
+00:37:11.037 --> 00:37:15.594
+have really efficient libraries
+that are I think compiled and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6979-2
+00:37:15.594 --> 00:37:17.284
+see for use with Numpy.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6997-0
+00:37:17.324 --> 00:37:20.377
+So it's really, really good at
+doing like matrix multiplication
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/6997-1
+00:37:20.377 --> 00:37:22.284
+when we have things formatted
+this one.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7020-0
+00:37:23.334 --> 00:37:26.664
+OK, so conversion other things
+that we can use it for is
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7020-1
+00:37:26.664 --> 00:37:29.934
+conversion from one coordinate
+system space to another.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7074-0
+00:37:29.944 --> 00:37:33.336
+So I'll show you in a moment
+with PCA what we do, what we
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7074-1
+00:37:33.336 --> 00:37:36.669
+solve with PCA is that we can
+solve for a transformation
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7074-2
+00:37:36.669 --> 00:37:40.002
+matrix and then we can apply
+that to our data and we can
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7074-3
+00:37:40.002 --> 00:37:43.511
+transform our data from its
+original feature space into the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7074-4
+00:37:43.511 --> 00:37:44.914
+component feature space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7091-0
+00:37:46.464 --> 00:37:49.322
+All right, that's another
+application we can project into
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7091-1
+00:37:49.322 --> 00:37:50.504
+lower dimensional space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7112-0
+00:37:50.514 --> 00:37:54.411
+That's what I was saying as far
+as taking your features and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7112-1
+00:37:54.411 --> 00:37:56.814
+resolving them as a single
+response.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7125-0
+00:37:56.944 --> 00:37:59.374
+That's a transformation into a
+lower dimensional space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7148-0
+00:37:59.464 --> 00:38:03.063
+You're going from 10 features
+down to a single value, and we
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7148-1
+00:38:03.063 --> 00:38:05.954
+can project them on to a space
+onto again space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7150-0
+00:38:06.284 --> 00:38:06.994
+Yeah, arson.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7189-0
+00:38:08.834 --> 00:38:12.396
+Umm can you go back to the
+previous slide and show us how
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7189-1
+00:38:12.396 --> 00:38:16.326
+we get a multidimensional array
+in the dot product has a single
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7189-2
+00:38:16.326 --> 00:38:17.554
+value as its output.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7203-0
+00:38:18.914 --> 00:38:22.919
+It seems here that the output is
+actually still has multiple
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7203-1
+00:38:22.919 --> 00:38:24.034
+columns and rows.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7206-0
+00:38:25.564 --> 00:38:25.994
+Right.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7230-0
+00:38:26.054 --> 00:38:30.072
+So with the dot product you can
+think of matrix multiplication
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7230-1
+00:38:30.072 --> 00:38:33.770
+as a special application or a
+repeated application of dot
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7230-2
+00:38:33.770 --> 00:38:34.344
+products.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7241-0
+00:38:35.254 --> 00:38:39.914
+So umm, Numpy supports the
+overloading of I?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7248-0
+00:38:39.964 --> 00:38:41.294
+Maybe it's not even overloading.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7259-0
+00:38:41.504 --> 00:38:43.994
+Yeah, I guess it is of the dot
+method.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7276-0
+00:38:45.404 --> 00:38:48.487
+So this is really performing
+matrix multiplication between a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7276-1
+00:38:48.487 --> 00:38:50.204
+matrix in this case and a
+vector.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7312-0
+00:38:51.364 --> 00:38:54.791
+So because of that, it's still
+adheres to these rules where we
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7312-1
+00:38:54.791 --> 00:38:58.273
+use the dimensions themselves,
+in this case A3 by two and a two
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7312-2
+00:38:58.273 --> 00:39:00.394
+by two, and we get a three by
+two out.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7335-0
+00:39:02.934 --> 00:39:06.098
+It's just that Numpy itself
+supports the use of dot for that
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7328-0
+00:39:03.594 --> 00:39:03.894
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7335-1
+00:39:06.098 --> 00:39:07.394
+as well as uh, Matt Mull.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7339-0
+00:39:11.024 --> 00:39:11.664
+OK. Thanks.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7340-0
+00:39:12.344 --> 00:39:12.484
+Sure.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7361-0
+00:39:14.414 --> 00:39:19.233
+OK, so one way of thinking about
+this is that we can think about
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7361-1
+00:39:19.233 --> 00:39:20.864
+matrix multiplication.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7376-0
+00:39:21.054 --> 00:39:23.807
+So there's this example in here
+if you're more familiar with
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7376-1
+00:39:23.807 --> 00:39:24.664
+Fourier transforms.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7378-0
+00:39:25.344 --> 00:39:25.834
+Umm.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7384-0
+00:39:26.314 --> 00:39:28.294
+Uh, Fourier transforms.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7389-0
+00:39:28.304 --> 00:39:29.214
+What do they do?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7398-0
+00:39:29.444 --> 00:39:32.394
+They decompose your signal,
+right?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7412-0
+00:39:32.524 --> 00:39:35.595
+Or really what they're doing is
+they're transforming it into a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7412-1
+00:39:35.595 --> 00:39:36.374
+different space.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7424-0
+00:39:36.804 --> 00:39:39.274
+So that's where this analogy
+comes from.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7466-0
+00:39:39.284 --> 00:39:42.942
+For those eyes out there, maybe
+this is a better way of thinking
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7466-1
+00:39:42.942 --> 00:39:46.600
+about it, and that if you have a
+signal in time what the Fourier
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7466-2
+00:39:46.600 --> 00:39:49.752
+transform does is it actually
+turns that to a signal in
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7466-3
+00:39:49.752 --> 00:39:50.314
+frequency.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7478-0
+00:39:50.614 --> 00:39:52.534
+So you're changing between these
+two.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7503-0
+00:39:52.904 --> 00:39:58.298
+So that's one one way to our
+conceptualize it right and here
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7503-1
+00:39:58.298 --> 00:40:02.454
+you can see that we have our
+frequency values.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7551-0
+00:40:02.794 --> 00:40:06.691
+We have this matrix over here
+which this matrix would describe
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7551-1
+00:40:06.691 --> 00:40:10.155
+our different individual
+sinusoids that we're trying to
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7551-2
+00:40:10.155 --> 00:40:13.310
+decompose the signal into, and
+then we have matrix
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7551-3
+00:40:13.310 --> 00:40:17.268
+multiplication with the data in
+the time domain, and we can get
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7551-4
+00:40:17.268 --> 00:40:19.804
+this extraction out this
+transformation.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7555-0
+00:40:20.354 --> 00:40:20.744
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7563-0
+00:40:20.974 --> 00:40:23.364
+So we're all talking about the
+same thing.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7574-0
+00:40:23.374 --> 00:40:25.694
+These are just different ways of
+conceptualizing it.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7608-0
+00:40:25.754 --> 00:40:28.979
+I think once you start using
+matrix multiplication, it can be
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7608-1
+00:40:28.979 --> 00:40:32.100
+confusing at first, but I just
+want to give you a number of
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7608-2
+00:40:32.100 --> 00:40:34.544
+examples that may be one of
+these strikes you.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7626-0
+00:40:34.554 --> 00:40:39.261
+Well, OK, so here's this example
+we talked about principal
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7626-1
+00:40:39.261 --> 00:40:41.334
+component analysis before.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7648-0
+00:40:41.824 --> 00:40:46.140
+So what we can do is we can
+actually solve in principal
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7648-1
+00:40:46.140 --> 00:40:48.914
+component analysis for this
+matrix.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7687-0
+00:40:49.044 --> 00:40:52.902
+This matrix over here and then
+by doing matrix multiplication
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7687-1
+00:40:52.902 --> 00:40:56.698
+between our feature matrix in
+our original feature space and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7687-2
+00:40:56.698 --> 00:41:00.058
+this solve matrix, we can
+transform the data into the
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7687-3
+00:41:00.058 --> 00:41:03.604
+principal components into a
+lower dimensional space. OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7706-0
+00:41:07.274 --> 00:41:09.964
+Just a few more things and then
+I think we're just about done.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7724-0
+00:41:10.334 --> 00:41:13.330
+So we also have identity
+matrices, so these are just kind
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7724-1
+00:41:13.330 --> 00:41:15.344
+of like fun special forms of
+matrices.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7747-0
+00:41:15.354 --> 00:41:18.917
+So the identity matrix is a
+matrix with zeros on the off
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7747-1
+00:41:18.917 --> 00:41:21.604
+diagonals and then ones down the
+diagonal.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7777-0
+00:41:22.424 --> 00:41:25.039
+So with the identity matrix,
+does is that if you have a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7777-1
+00:41:25.039 --> 00:41:27.794
+matrix and you multiply it by
+the identity matrix, you get
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7777-2
+00:41:27.794 --> 00:41:28.774
+that same matrix out.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7779-0
+00:41:30.224 --> 00:41:30.574
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7821-0
+00:41:31.344 --> 00:41:36.555
+We also have a negation matrix,
+so if we wanted to negate all
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7821-1
+00:41:36.555 --> 00:41:41.345
+the values in our matrix, we
+could use a identity matrix
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7821-2
+00:41:41.345 --> 00:41:46.808
+multiplied by -, 1 by the scalar
+value -, 1 OK that we can get a
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7821-3
+00:41:46.808 --> 00:41:47.564
+negation.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7825-0
+00:41:49.594 --> 00:41:50.244
+Ohm.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7835-0
+00:41:52.454 --> 00:41:54.724
+Why would we need the normal
+identity matrix?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7846-0
+00:41:56.374 --> 00:42:00.404
+I think there are a number of
+reasons that we would.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7903-0
+00:42:03.484 --> 00:42:07.251
+One way that it appears is that
+if we're doing some kind of
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7903-1
+00:42:07.251 --> 00:42:11.080
+algebraic manipulation, so if
+we're using linear algebra and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7903-2
+00:42:11.080 --> 00:42:15.035
+we wanna switch like a matrix
+from one side of the equation to
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7903-3
+00:42:15.035 --> 00:42:18.864
+the other side, what we can do
+is we can take the inverse of
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7903-4
+00:42:18.864 --> 00:42:19.554
+the matrix.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7942-0
+00:42:20.124 --> 00:42:23.719
+Wow, inverse of the matrix is
+not always guaranteed, but if we
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7942-1
+00:42:23.719 --> 00:42:27.142
+can take the inverse of the
+matrix, the inverse of a matrix
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7942-2
+00:42:27.142 --> 00:42:30.565
+matrix multiplied by the matrix
+itself returns the identity
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7942-3
+00:42:30.565 --> 00:42:30.964
+matrix.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7952-0
+00:42:32.404 --> 00:42:34.874
+So it's effectively like
+multiplying by 1.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7955-0
+00:42:38.224 --> 00:42:38.574
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7964-0
+00:42:39.124 --> 00:42:41.464
+And in fact, you remember the
+normal equation.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7969-0
+00:42:45.524 --> 00:42:45.824
+OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7973-0
+00:42:45.834 --> 00:42:46.614
+I'll go back to that.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7989-0
+00:42:46.884 --> 00:42:50.037
+That's one of the solutions for
+multiple linear regression to
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/7989-1
+00:42:50.037 --> 00:42:51.054
+find the parameters.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8013-0
+00:42:51.124 --> 00:42:54.372
+I'll go back to the I'll pull
+that up and after hours and
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8013-1
+00:42:54.372 --> 00:42:57.004
+I'll, I'll show you what is
+actually going on.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8022-0
+00:42:57.014 --> 00:43:01.834
+The OK we can also define a
+permutation matrix.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8049-0
+00:43:01.844 --> 00:43:05.645
+So what the permutation matrix
+does is it swaps the values
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8049-1
+00:43:05.645 --> 00:43:08.544
+within the columns, or it swaps
+the columns.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8062-0
+00:43:08.794 --> 00:43:11.784
+So in this case we have 1357911.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8081-0
+00:43:11.954 --> 00:43:17.394
+If we do ones off the diagonals,
+what we end up with is 3175119.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8083-0
+00:43:18.914 --> 00:43:19.394
+Umm.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8093-0
+00:43:19.874 --> 00:43:23.544
+And then we can do operations
+together.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8114-0
+00:43:23.554 --> 00:43:28.654
+So if we wanted to, you negate
+as well as reverse the ordering,
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8114-1
+00:43:28.654 --> 00:43:31.044
+we could apply these together.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8143-0
+00:43:31.374 --> 00:43:36.456
+So one thing that I hope you get
+away from this lecture is that
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8143-1
+00:43:36.456 --> 00:43:40.663
+the order that matrix
+multiplication happens in does
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8143-2
+00:43:40.663 --> 00:43:41.854
+in fact matter.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8154-0
+00:43:43.074 --> 00:43:45.124
+So it it's, uh, what's the
+property?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8158-0
+00:43:46.894 --> 00:43:48.484
+Uh, commutative.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8170-0
+00:43:48.554 --> 00:43:51.474
+It doesn't support the
+commutative wait.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8173-0
+00:43:51.634 --> 00:43:52.524
+I'm gonna embarrass myself.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8180-0
+00:43:52.534 --> 00:43:53.424
+I'm not gonna tell you that.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8184-0
+00:43:53.434 --> 00:43:54.384
+Scratch that from the record.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8206-0
+00:43:56.314 --> 00:43:59.720
+Uh, delete that back up 10
+seconds and then or Fast forward
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8206-1
+00:43:59.720 --> 00:44:01.934
+10 seconds and then play the
+video OK.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8217-0
+00:44:03.984 --> 00:44:05.394
+So we can combine these
+together.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8233-0
+00:44:06.124 --> 00:44:09.843
+And then yeah, I think that was
+the last of what I wanted to
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8233-1
+00:44:09.843 --> 00:44:10.574
+cover today.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8240-0
+00:44:10.964 --> 00:44:12.414
+Any questions over that?
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8248-0
+00:44:12.424 --> 00:44:14.674
+Let me pull up the normal
+equation.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8254-0
+00:44:14.684 --> 00:44:15.654
+We can take a look at that
+again.
+
+d8402a8f-2e76-4d04-8bd4-2feede5ba29a/8263-0
+00:44:18.224 --> 00:44:19.754
+But while we're doing that, any
+questions?
